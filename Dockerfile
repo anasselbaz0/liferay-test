@@ -8,3 +8,5 @@ RUN blade init -v 7.3 kms
 WORKDIR kms
 RUN blade server init
 RUN blade server run
+
+EXPOSE 8080
