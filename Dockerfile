@@ -1,7 +1,7 @@
 FROM ubuntu:xenial-20210611
 
 RUN apt-get update
-RUN apt-get install openjdk-11-jdk
+RUN apt install default-jre
 
 RUN curl -L [https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/installers/local](https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/installers/local) | sh
 RUN echo 'export PATH="$PATH:$HOME/jpm/bin"' >> ~/.bashrc
